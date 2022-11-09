@@ -43,8 +43,33 @@ export const InfoWeatherContainer = styled.div`
     color: inherit;
   }
 
-  & > h2 {
+  & h2 {
     color: inherit;
     font-weight: 400;
+  }
+
+  & h2 ~ div {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 12px;
+  }
+
+  .iconWrapper {
+    display: flex;
+  }
+
+  .iconWrapper + .iconWrapper {
+    margin-top: 8px;
+  }
+
+  .iconWrapper svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .city {
+    margin: 1rem 0px;
+    font-weight: bold;
   }
 `;
