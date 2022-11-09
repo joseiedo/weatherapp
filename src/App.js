@@ -6,8 +6,14 @@ import { InfoWeatherContainer } from "./Components/styles/InfoWeather";
 import { WeatherData } from "./Components/WeatherData";
 
 const App = () => {
-  const key = "2c47a3a8e122183e0799239a6f1d8f73";
+  // --------------------------------------------------------------------
+  // se quiser testar, ou usa a minha ou gere a sua key no site do openweather!
 
+  // Minha key:
+  // 2c47a3a8e122183e0799239a6f1d8f73
+  const key = "";
+
+  // --------------------------------------------------------------------
   const [theme, setTheme] = React.useState("dark");
   const [city, setCity] = React.useState("");
   const [typed, setTyped] = React.useState(false);
