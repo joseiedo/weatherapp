@@ -29,7 +29,6 @@ const App = () => {
     fetch(url)
       .then((r) => r.json())
       .then((r) => {
-        console.log(r);
         setData(r);
         setLoading(false);
         setCity("");

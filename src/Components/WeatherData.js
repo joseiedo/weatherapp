@@ -20,7 +20,7 @@ export const WeatherData = ({ data, theme, loading }) => {
       <span className="city">{data.name}</span>
       <div className="iconWrapper">
         <WiHumidity />
-        <span>humidity: {data.main.humidity}</span>
+        <span>humidity: {data.main.humidity} %</span>
       </div>
       <div className="iconWrapper">
         <TbWind />
